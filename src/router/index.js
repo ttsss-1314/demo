@@ -1,6 +1,6 @@
 import HelloWorld from "../components/HelloWorld.vue";
 import Helloworld2 from "../components/Helloworld2.vue";
-import {createMemoryHistory, createRouter} from "vue-router";
+import {createWebHistory, createRouter} from "vue-router";
 
 const routes = [
     { path: '/', component: HelloWorld },
@@ -8,7 +8,7 @@ const routes = [
 ]
 
 const router = createRouter({
-    history: createMemoryHistory(),
+    history: createWebHistory(),
     routes:routes,
 })
 
