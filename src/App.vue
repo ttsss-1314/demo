@@ -1,11 +1,15 @@
-<script setup>
-import Basiclayout from "./layout/Basiclayout.vue";
-</script>
-
 <template>
-  <Basiclayout></Basiclayout>
+  <router-view></router-view>
 </template>
 
-<style scoped>
+<script setup>
+</script>
 
+<style>
+/* 放全局样式 */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
 </style>
